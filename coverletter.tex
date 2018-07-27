@@ -1,0 +1,130 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,edge,left]{./photo}
+\name{Axel}{Moinet}
+\position{Ingénieur embarqué et réseaux, développeur et administrateur systèmes Linux}
+\address{13 Grande Rue 21120 Poiseul Lès Saulx\\28ans, permis B}
+
+\mobile{06.59.38.50.29}
+\email{moinet.axel@gmail.com}
+\homepage{www.bullekeup.net}
+\github{bullekeup}
+\linkedin{axel.moinet}
+%\gitlab{bullekeup}
+% \stackoverflow{SO-id}{SO-name}
+%\twitter{@bullekeup}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+\quote{``Either the users control the program, or the program controls the users.'' RMS}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Cadoles}
+  {29 bis rue de l'Arquebuse \\ 21000 Dijon \\ 03.73.27.02.86}
+% The date on the letter, default is the date of compilation
+\letterdate{19 Juillet 2018}
+% The title of the letter
+\lettertitle{Objet : Candidature au poste d'administrateur système}
+% How the letter is opened
+\letteropening{Madame, Monsieur,}
+% How the letter is closed
+\letterclosing{Cordialement,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {19 Juillet 2018}
+  {Axel Moinet~~~ ~~~Lettre de motivation}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+  Mon engagement pour la libre circulation des connaissances m'a naturellement amené à utiliser les logiciels libres et à promouvoir leur philosophie de partage, de travail collaboratif et leur attachement à la liberté, et ce depuis plus de 10 ans. Actuellement en fin de thèse portant sur la définition d'une architecture IoT sécurisée et adaptative basée sur la blockchain; j'ai l'opportunité de mettre en \oe{}uvre mes connaissances au sein d'une structure respectueuse de cette philosophie, et Cadoles me paraît être le cadre idéal pour réaliser cette ambition.
+~\vspace{-0.4cm}
+\lettersection{\`A ~propos de moi}
+D'un naturel passionné, ma curiosité et mon inventivité ont guidé mon envie d'approfondir mes connaissances jusqu'au doctorat. Tout au long de mon cursus, j'ai pu parfaire mon expertise des systèmes GNU / Linux, de la programmation système ainsi que des infrastructures réseau. Après m'être premièrement orienté vers l'électronique et les systèmes embarqués, j'ai souhaité diversifier mon apprentissage en faisant la part belle aux systèmes d'exploitation et aux réseaux. Ma thèse m'a permis d'affuter mes connaissances dans ces domaines; mais également de mener un projet ambitieux, me permettant d'apprendre à mieux m'organiser et à gérer mes objectifs en autonomie. De plus, j'ai eu l'occasion cette dernière année d'enseigner au sein de l'ESIREM de Dijon et de présenter mes travaux au cours de différentes conférences, ce qui m'a permis de développer ma capacité à formuler mes idées et à m'adapter au public, pour transmettre mes connaissances et faire apprécier mes travaux. D'autre part, ma curiosité me pousse également à mener divers projets personnels, qui me permettent de continuer à élargir le champ de mes connaissances, par exemple par l'apprentissage de nouveaux langages, tels que Go et Lisp récemment; ou encore via mon intérêt pour la sécurité, principalement focalisé sur le reverse engineering et l'exploitation de failles logicielles. Avant cela, mon premier poste d'ingénieur au sein d'Oberthur Cash Protection m'a donné l'opportunité de diriger le développement logiciel pour la gamme de produits IPDS; cette expérience m'a permis de développer mon esprit d'équipe, ma capacité à travailler en collaboration avec différents départements, et à été l'occasion de me familiariser avec les processus de gestion qualité et d'industrialisation.
+~\vspace{-0.4cm}
+\lettersection{Pourquoi Cadoles ?}
+Je souhaite aujourd'hui participer activement à l'éco-système entourant les logiciels libres, qui m'ont permis d'accéder librement aux savoirs dont j'ai eu besoin par le passé. C'est dans cet objectif que j'ai commencé par me renseigner sur l'association COAGUL, ce qui m'a permis de découvrir Cadoles et les différents projets que vous menez. La perspective de pouvoir m'investir dans une structure qui corresponde à mes attentes techniques et humaines, telle que Cadoles, me permettrait de continuer à apprendre et à me perfectionner, tout en apportant ma contribution aux logiciels libres. Dans l'objectif d'intégrer votre coopérative, je suis disponible pour un entretien ou tout renseignement complémentaire, et vous adresse mes plus sincères salutations.
+\end{cvletter}
+~\vspace{-0.4cm}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+\end{document}

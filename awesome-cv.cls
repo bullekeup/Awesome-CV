@@ -679,9 +679,11 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \recipienttitlestyle{\@recipientname} & \letterdatestyle{\@letterdate}
   \end{tabular*}
+  \vspace{-0.5cm}
   \begin{singlespace}
     \recipientaddressstyle{\@recipientaddress} \\\\
   \end{singlespace}
+  \vspace{-0.75cm}
   \ifthenelse{\isundefined{\@lettertitle}}
     {}
     {\lettertitlestyle{\@lettertitle} \\}
@@ -692,7 +694,7 @@
 % Usage: \makeletterclosing
 \newcommand*{\makeletterclosing}{%
   \vspace{3.4mm}
-  \lettertextstyle{\@letterclosing} \\\\
+  \lettertextstyle{\@letterclosing} \\
   \letternamestyle{\@firstname\ \@lastname}
   \ifthenelse{\isundefined{\@letterenclosure}}
     {\\}
